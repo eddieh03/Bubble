@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <link rel="stylesheet" href="login.css">
+  <title>Log In</title>
+</head>
+<body>
+  <section id="header">
+    <a href="#"><img src="Images/bubblee.png" class="logo" alt=""></a>
+
+    <div>
+        <ul id="navbar">
+
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shopnow.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html" target="_self">About</a></li>
+            <li><a href="contact.html" target="_self">Contact</a></li>
+            <li><a href="login.html" target="_self">Log In/Register</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+        </ul>
+    </div>
+
+</section>
+<div class="center">
+    <h1>Login</h1>
+    <form method="post">
+      <div class="txt_field">
+        <input type="text" required>
+        <span></span>
+        <label>Username</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" required>
+        <span></span>
+        <label>Password</label>
+      </div>
+        <div class="pass"> Forget Password?</div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+         Not a member? <a href="#">Register</a>
+
+        </div>
+      </div>
+    </form>
+</div>
+
+  <script>
+    // Get the login form
+    var loginForm = document.getElementById('loginForm');
+
+    // Add a submit event listener to the form
+    loginForm.addEventListener('submit', function(event) {
+      // Get the username and password values
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Validate the username and password
+      if (username == '' || password == '') {
+        alert('Username and password are required');
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
