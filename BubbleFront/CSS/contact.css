@@ -14,6 +14,7 @@ body{
 h1{
     margin: 20px;
     font-size: 50px;
+    margin-top: 50px;
     line-height: 64px;
     color: rgb(0, 0, 0);
 }
@@ -23,7 +24,6 @@ h1{
     justify-content: space-between;
     padding: 20px 80px;
     background-color: transparent;
-    /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);*/
     z-index: 999;
     position: sticky;
     top: 0;
@@ -69,6 +69,69 @@ h1{
     bottom: -4px;
     left: 20px;
 }
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 80px; */
+    background-image: url("/BubbleFront/Images/grr.png");
+}
+.content{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.user-info input{
+    width: 350px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #e6e6e6;
+    border: none;
+    margin: 5px 0;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+}
+button{
+    margin: 20px 0;
+    width: 290px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #57b846;
+    cursor: pointer;
+    font-size: 25px;
+}
+.message{
+    height: 100%;
+}
+#msg{
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    background-color: #e6e6e6;
+    border: none;
+    margin: 5px 0;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    box-sizing: border-box;
+    resize: none;
+    padding-top: 15px;
+}
 .h11{
     
     display: flex;
@@ -76,11 +139,14 @@ h1{
     justify-content: center;
 }
 .section-p1{
-    margin-top: 310px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 80px;
     padding: 40px 80px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .footer9{
     width: 100%;
@@ -88,8 +154,6 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    margin-top: 0%;
 }
 footer ul{
     font-size: 15px;
@@ -153,7 +217,7 @@ footer ul li{
         flex-wrap: wrap;
     }
     .copy{
-        /* position: relative; */
+        position: relative;
         display: block;
         bottom: -850px;
         text-align: center;

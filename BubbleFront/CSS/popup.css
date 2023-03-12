@@ -1,0 +1,59 @@
+.pop-up{
+    position: fixed;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    display: none;
+}
+.pop-up h1{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+#X{
+    cursor: pointer;
+}
+.pop-up_container{
+    padding: 20px;
+    width: 50%;
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 20px;
+    background-image: url("./img/bubblee.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+.pop-up_container input{
+    width: 290px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #e6e6e6;
+    border: none;
+    margin: 5px 0;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+}
+.pop-up_container button{
+    padding: 10px 20px;
+    background-color: #747474;
+    border: none;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e6e6e6;
+    font-size: 22px;
+    font-weight: 600;
+}
+.none{
+    display: flex;
+}

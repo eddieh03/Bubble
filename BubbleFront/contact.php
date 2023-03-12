@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
 </head>
 <body>
     <section id="header">
@@ -26,8 +27,29 @@
         </div>
 
     </section>
+    <?php
+    include("./Php/ContactCrudModel.php");
+    if (isset($_POST['submit'])) {
+        $contactModel = new ContactCrudModel();
+        $contactModel->setName($_POST['name']);
+        $contactModel->setEmail($_POST['email']);
+        $contactModel->setMessage($_POST['message']);
+
+        $contactModel->insert();
+    }
+    ?>
+    <main>
+        <h1 class="h11">Contact</h1>
+        <div class="content">
+            <div class="user-info">
+                <input type="text" name="name" placeholder="First Name">
+                <input type="email" name="email" placeholder="E-mail">
+                <textarea type="text" name="message" id="msg"></textarea>
+                <button type="submit" name="submit">Submit</button>
+            </div>
+        </div>
+    </main>
     <footer>
-    <h1 class="h11">Contact</h1>
     <div class="section-p1">
         <div class="company_info">
             <ul>

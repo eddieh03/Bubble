@@ -17,7 +17,6 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-
 #header{
     display: flex;
     align-items: center;
@@ -32,6 +31,11 @@ body{
 }
 .logo{
     width: 150px;
+    height: 50px;
+    background-image: url("../../BubbleFront/Images/bubblee.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #navbar{
@@ -61,7 +65,6 @@ body{
 }
 
 main {
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,8 +80,7 @@ main {
     bottom: -4px;
     left: 20px;
 }
-
-.login form input {
+.register form input {
     width: 290px;
     height: 50px;
     border-radius: 25px;
@@ -96,12 +98,12 @@ form{
     justify-content: center;
     flex-wrap: nowrap;
 }
-.login h1 {
+.register h1 {
     margin-top: 0px;
     padding: 10px 20px;
 }
 
-.login__button {
+.register__button {
     margin: 20px 0;
     width: 290px;
     height: 50px;
@@ -112,12 +114,12 @@ form{
     font-weight: bold;
     background-color: #57b846;
 }
-.login__button:hover{
+.register__button:hover{
     cursor: pointer;
     padding-bottom: 4px;
 }
 
-.login .error {
+.register .error {
     display: none;
     color:red;
 }

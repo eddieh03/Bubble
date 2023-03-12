@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: 'Spartan' , sans-serif;
 }
+
+.hide {
+    display: none
+}
+
 h1{
     font-size: 50px;
     line-height: 64px;
@@ -137,7 +142,7 @@ body{
 }
 
 #zara{
-    background-image: url("/Images/zara3.png");
+    background-image: url("/BubbleFront/Images/zara3.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -262,7 +267,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("/Images/tshirt.png");
+    background-image: url("/BubbleFront/Images/tshirt.png");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
